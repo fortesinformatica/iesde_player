@@ -25,20 +25,21 @@ Depois Adicionar em seu **application.js**:
 ## Uso
 
 > O player é renderizado como uma tag <div> no html por meio da chamada do helper **iesde_player_div**
-
 ### Formato:
-
 ```ruby
 <%= iesde_player_div(div_id, params) %>
 ```
 
 ### Exemplo mais simples
-
 Em sua *view* adicione:
-
 ```ruby
 <%= iesde_player_div "palco", user: 'aluno@eail.com', pass: '64727163829', course: '6376', movie_id: '4273' %>
 ```
+
+Resultando no player no formato padrão:
+
+
+![screenshot](https://raw.githubusercontent.com/fortesinformatica/iesde_player/master/readme_screenshot.png)
 
 Onde:
 
@@ -47,7 +48,6 @@ Parâmetros Obrigatórios:
 - **:pass** - CPF do aluno que irá assistir a aula
 - **:course** - id do curso do qual a aula pertence
 - **:movie_id** - id da aula que será assistida
-
 > Todos os parâmetros são explicados na documentação do Iesde
 
 Parâmetros Opcionais:
@@ -68,5 +68,7 @@ Parâmetros Opcionais:
 ## Licença
 
 MIT Licence. Copyright (c) 2016 Fortes Tecnologia. http://www.fortestecnologia.com.br
+
+![ft](http://www.fortestecnologia.com.br/templates/fortesinfo/images/grupo-fortes.png)
 
 [siteiesde]:<http://www.iesde.com.br>

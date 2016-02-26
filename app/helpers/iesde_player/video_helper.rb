@@ -12,26 +12,26 @@ module IesdePlayer
 
       def flashvars_cleaner(params)
         hash = {}
-        hash[:autostart] = params[:auto_start] || ""
-        hash[:themeColor] = params[:theme_color] || ""
-        hash[:mode] = params[:mode] || ""
-        hash[:scaleMode] = params[:scale_mode] || ""
-        hash[:frameColor] = params[:frame_color] || ""
-        hash[:fontColor] = params[:font_color] || ""
+        hash[:autostart] = params[:auto_start] || "false"
+        hash[:themeColor] = params[:theme_color] || "0395d3"
+        hash[:mode] = params[:mode] || "fit"
+        hash[:scaleMode] = params[:scale_mode] || "stretch"
+        hash[:frameColor] = params[:frame_color] || "ffffff"
+        hash[:fontColor] = params[:font_color] || "000000"
         hash[:user] = params[:user] || ""
         hash[:pass] = params[:pass] || ""
         hash[:course] = params[:course] || ""
         hash[:movieid] = params[:movie_id] || ""
-        hash[:courseType] = params[:course_type] || ""
+        hash[:courseType] = params[:course_type] || "C"
         hash
       end
 
       def params_cleaner(params)
         hash = {}
-        hash[:allowFullScreen] = params[:allow_full_screen] || ""
-        hash[:allowscriptaccess] = params[:allow_script_access] || ""
-        hash[:quality] = params[:quality] || ""
-        hash[:AllowNetworking] = params[:allow_networking] || ""
+        hash[:allowFullScreen] = params[:allow_full_screen] || "true"
+        hash[:allowscriptaccess] = params[:allow_script_access] || "always"
+        hash[:quality] = params[:quality] || "high"
+        hash[:AllowNetworking] = params[:allow_networking] || "all"
         hash
       end
 

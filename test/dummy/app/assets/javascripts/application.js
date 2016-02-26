@@ -11,7 +11,3 @@
 // about supported directives.
 //
 //= require_tree .
-
-function renderizarVideoPlayerIesde(playerLocation, idDiv, width, height, flashvars, params, attributes){
-  swfobject.embedSWF(playerLocation, idDiv, width, height, '9.0.0', 'expressInstall.swf', flashvars, params, attributes);
-}

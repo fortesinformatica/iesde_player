@@ -8,6 +8,18 @@ module IesdePlayer
         content_tag(:div, nil, id: id)
       end
 
+      def iesde_player_demo(url, parameters)
+        html_params = {
+          src: "http://web.videoaulasonline.com.br/player/player.swf", 
+          flashvars: "autostart=#{parameters[:autostart] ? 'true' : 'false'}&streamer=#{url}", 
+          allowfullscreen: "true",
+          allowscriptaccess: "always",
+          allownetworking: "all",
+          autostart: (parameters[:autostart] || false)
+        }
+        content_tag( :embed, nil, html_params.merge(parameters[:html] || {}))
+      end
+
       private
 
       def flashvars_cleaner(params)

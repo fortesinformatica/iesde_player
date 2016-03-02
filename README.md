@@ -65,6 +65,25 @@ Parâmetros Opcionais:
 - **:quality** - default ```"high"```
 - **:allow_networking** - default ```"all"```
 
+### Video Demonstrativo do Curso
+
+Em sua *view* adicione:
+```ruby
+<%= iesde_player_demo "rtmp://urldovideonoportalava.mp4" %>
+```
+
+Com início automático:
+
+```ruby
+<%= iesde_player_demo "rtmp://urldovideonoportalava.mp4", autostart: true %>
+```
+
+Com atributos html no embed gerado:
+
+```ruby
+<%= iesde_player_demo "rtmp://urldovideonoportalava.mp4", autostart: true, html: { style: "width: 500px; height: 500px;" } %>
+```
+
 ## Licença
 
 MIT Licence. Copyright (c) 2016 Fortes Tecnologia. http://www.fortestecnologia.com.br

@@ -8,12 +8,12 @@ Helper de exibição de vídeos do WebService do [Iesde][siteiesde] para sistema
 ## Instalação
 
 ```sh
-gem install iesde_player -v 1.0.0
+gem install iesde_player -v 1.0.1
 ```
 
 Ou no seu Gemfile
 ```ruby
-gem 'iesde_player', '~> 1.0.0'
+gem 'iesde_player', '~> 1.0.1'
 ```
 
 Depois Adicionar em seu **application.js**:

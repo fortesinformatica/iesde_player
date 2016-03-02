@@ -3,7 +3,7 @@ module IesdePlayer
     isolate_namespace IesdePlayer
 
     config.to_prepare do
-      ::ApplicationController.helper(VideoHelper)
+      ::ActionController::Base.helper(VideoHelper)
     end
     config.assets.paths << File.expand_path("../../assets/flash", __FILE__)
     config.assets.paths << File.expand_path("../../assets/images", __FILE__)
